@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
+import {publicRoutes as _pub} from "./../exactRoutes"
 
 const PrivateRoute = props => {
   const {isAuthenticated, component: Component, ...rest} = props
@@ -8,7 +9,7 @@ const PrivateRoute = props => {
       component={(props) => (
         (isAuthenticated) 
           ? (<Component {...props} />)
-          : (<Redirect to='/cv' />)
+          : (<Redirect to={_pub().cv} />)
       )}
     />
   )

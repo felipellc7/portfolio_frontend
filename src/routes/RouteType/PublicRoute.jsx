@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
+import {privateRoutes as _priv} from "./../exactRoutes"
 
 const PublicRoute = props => {
   const {isAuthenticated, component: Component, ...rest} = props
@@ -8,7 +9,7 @@ const PublicRoute = props => {
       component={(props) => (
         (!isAuthenticated)
           ? (<Component {...props} />)
-          : (<Redirect to='/dashboard' />)
+          : (<Redirect to={_priv().dashboard} />)
       )}
     />
   )
