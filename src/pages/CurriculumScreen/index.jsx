@@ -1,11 +1,8 @@
 import React from 'react';
+import Landing from '../../components/Landing';
 
 const CurriculumScreen = () => {
-  return (
-    <>
-      <h1>CurriculumScreen</h1>
-    </>
-  );
+  return <Landing />;
 }
  
 export default CurriculumScreen;
