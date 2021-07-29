@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
-import PrivateContainer from "../../containers/PrivateContainer";
+import PrivateContainer from "@Containers/PrivateContainer";
 
-import {PrivateRoute, PublicRoute} from "../../routes/RouteType";
-import LoginScreen from "../../pages/LoginScreen";
-import CurriculumScreen from "../../pages/CurriculumScreen";
-import {publicRoutes as _pub} from "./../exactRoutes"
+import {PrivateRoute, PublicRoute} from "@Routes/RouteType";
+import LoginScreen from "@Pages/LoginScreen";
+import CurriculumScreen from "@Pages/CurriculumScreen";
+import {publicRoutes as _pub} from "@Routes/exactRoutes"
 
 const PublicRouter = () => {
   // const { user } = useContext(AuthContext);

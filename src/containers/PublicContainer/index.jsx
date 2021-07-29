@@ -1,6 +1,6 @@
 import React from 'react';
-import PublicRouter from "../../routes/PublicRouter";
-import "../../assets/css/index.scss"
+import PublicRouter from "@Routes/PublicRouter";
+import "@Css/index.scss"
 
 const PublicContainer = () => {  
   return <PublicRouter />

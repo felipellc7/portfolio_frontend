@@ -1,5 +1,5 @@
 import React from "react";
-import PrivateRouter from "../../routes/PrivateRouter";
+import PrivateRouter from "@Routes/PrivateRouter";
 
 const PrivateContainer = () => {
   return <PrivateRouter />

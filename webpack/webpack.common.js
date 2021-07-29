@@ -1,3 +1,4 @@
+const alias = require("./../aliasesPath");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
@@ -29,6 +30,7 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".json", ".jsx"],
+    alias
   },
   plugins: [
     new CleanWebpackPlugin(),

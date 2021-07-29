@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import {privateRoutes as _priv} from "./../exactRoutes"
+import {privateRoutes as _priv} from "@Routes/exactRoutes"
 
 const PublicRoute = props => {
   const {isAuthenticated, component: Component, ...rest} = props

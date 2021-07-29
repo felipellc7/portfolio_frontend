@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
-import DashboardScreen from "../../pages/DashboardScreen"
+import DashboardScreen from "@Pages/DashboardScreen"
 
 const PrivateRouter = () => {
 	return (

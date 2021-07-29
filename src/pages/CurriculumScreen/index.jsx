@@ -1,5 +1,5 @@
 import React from 'react';
-import Landing from '../../components/Landing';
+import Landing from '@Components/Landing';
 
 const CurriculumScreen = () => {
   return <Landing />;

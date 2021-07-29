@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PublicContainer from "./containers/PublicContainer"
+import PublicContainer from "@Containers/PublicContainer"
 
 ReactDOM.render(
   <React.StrictMode>
