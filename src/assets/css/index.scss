@@ -1,6 +1,8 @@
 @import "./modules/_mixins.scss";
 @import "./modules/_variables.scss";
 
+@import "./style_views/landing.scss";
+
 * {
   box-sizing: border-box;
 }
@@ -12,37 +14,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #050828;
+  background-color: $white;
 }
 
-h2 {
-  color: #FFFFFF;
-}
-
-.landing-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.landing-header-main {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  @include full-width-height;
-  @include justify-align-center;
-}
-
-.landing-primary-section {
-  display: flex;
-  @include content-start-center;
-  @include full-viewport;
-}
-
-@media screen and (min-width: 620px) {
-  .landing-header-main {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Ubuntu';
 }

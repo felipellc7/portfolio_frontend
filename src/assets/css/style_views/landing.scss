@@ -1,0 +1,68 @@
+@import "../modules/_mixins.scss";
+@import "../modules/_variables.scss";
+
+.landing-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.landing-header-main {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 6rem;
+  @include justify-align-center;
+  @include row-around;
+  background-color: $primary;
+  h2 {
+    color: $primary-dark;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: $white;
+    padding: 1rem .8rem;
+    border-radius: 4rem;
+  }
+}
+
+.subheader {
+  display: flex;
+  width: 100%;
+  height: 7rem;
+  @include justify-align-center;
+  margin-top: 6rem;
+  background-color: $primary-dark;
+  h2 {
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: $medium-text;
+    text-align: center;
+  }
+}
+
+.landing-primary-section {
+  display: flex;
+  @include content-start-center;
+  width: 100%;
+  height: calc(100vh - 13rem);
+  // background-image: url('./../../img/main-landing.jpg');
+  img {
+    @include full-width-height;
+    object-fit: cover;
+  }
+}
+
+.landing-bio-section {
+  width: 100%;
+  height: 177rem;
+  background-color: pink;
+  // background-image: url('./../../img/main-landing.jpg');
+}
+
+@media screen and (min-width: 620px) {
+}

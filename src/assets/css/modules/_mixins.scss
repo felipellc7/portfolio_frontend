@@ -17,3 +17,8 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin row-around {
+  flex-direction: row;
+  justify-content: space-around;
+}
