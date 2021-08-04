@@ -1,6 +1,7 @@
 import React from 'react';
 import LandingHeader from "./Header"
 import landingBackgroundImg from "@Img/main-landing.jpg"
+import landingArrowDownImg from "@Img/arrow-down.png"
 
 const Landing = () => {
   return (
@@ -15,7 +16,9 @@ const Landing = () => {
           <div className="content-primary-section">
             <div>
               <h1>I'm <span className="landing-name">Felipe</span>, nice to meet you!</h1>
-              
+            </div>
+            <div className="arrow-bounce">
+              <img alt="" src={landingArrowDownImg} />
             </div>
           </div>
         </div>

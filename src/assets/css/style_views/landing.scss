@@ -76,14 +76,15 @@
 }
 
 .content-primary-section {
+  padding: 2.5rem;
   text-align: center;
   @include full-width-height;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  @include justify-align-center;
+  align-items: center;
+  justify-content: space-between;
   h1 {
-    margin-top: -10rem;
     font-size: 2.8rem;
     color: $white;
   }
@@ -101,7 +102,41 @@
   width: 100%;
   height: 177rem;
   background-color: pink;
-  // background-image: url('./../../img/main-landing.jpg');
+}
+
+.arrow-bounce {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  img {
+    width: 4rem;
+    height: 3rem;
+    animation: bounce 2.5s infinite;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
 }
 
 @media screen and (min-width: 620px) {
