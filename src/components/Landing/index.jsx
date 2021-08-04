@@ -12,6 +12,12 @@ const Landing = () => {
         </div>
         <div className="landing-primary-section">
           <img src={landingBackgroundImg} alt="landing" />
+          <div className="content-primary-section">
+            <div>
+              <h1>I'm <span className="landing-name">Felipe</span>, nice to meet you!</h1>
+              
+            </div>
+          </div>
         </div>
         <div className="landing-bio-section">
           <p>ola</p>

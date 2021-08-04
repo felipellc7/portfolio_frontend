@@ -19,13 +19,29 @@
   background-color: $primary;
   h2 {
     color: $primary-dark;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: bold;
     font-size: 1.5rem;
     text-align: center;
     background-color: $white;
     padding: 1rem .8rem;
     border-radius: 4rem;
+  }
+  button {
+    background-color: yellow;
+    color: $black;
+    text-transform: capitalize;
+    border: solid 1px $black;
+    padding: .6rem 1rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: $black;
+    color: yellow;
+    border: solid 1px yellow;
   }
 }
 
@@ -38,7 +54,7 @@
   background-color: $primary-dark;
   h2 {
     color: $white;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: bold;
     font-size: $medium-text;
     text-align: center;
@@ -50,11 +66,35 @@
   @include content-start-center;
   width: 100%;
   height: calc(100vh - 13rem);
-  // background-image: url('./../../img/main-landing.jpg');
+  position: relative;
+  z-index: -1;
   img {
     @include full-width-height;
     object-fit: cover;
+    position: absolute;
   }
+}
+
+.content-primary-section {
+  text-align: center;
+  @include full-width-height;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  @include justify-align-center;
+  h1 {
+    margin-top: -10rem;
+    font-size: 2.8rem;
+    color: $white;
+  }
+}
+
+.landing-name {
+  padding: 0 .8rem;
+  color: $black;
+  border: 1px solid $black;
+  border-radius: 1.5rem;
+  background-color: yellow;
 }
 
 .landing-bio-section {
@@ -65,4 +105,9 @@
 }
 
 @media screen and (min-width: 620px) {
+  .content-primary-section {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
 }
