@@ -10,7 +10,8 @@ const devConfig = {
     port: 3000,
     contentBase: "../build",
     hot: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    disableHostCheck: true,
   },
   target: "web",
   plugins: [new HotModuleReplacementPlugin(), new ReactRefreshWebpackPlugin()],

@@ -98,12 +98,6 @@
   background-color: yellow;
 }
 
-.landing-bio-section {
-  width: 100%;
-  height: 177rem;
-  background-color: pink;
-}
-
 .arrow-bounce {
   width: 3rem;
   height: 3rem;
@@ -117,6 +111,37 @@
     animation: bounce 2.5s infinite;
   }
 }
+
+.landing-bio-section {
+  width: 100%;
+  height: 20rem;
+  background-color: white;
+}
+
+.landing-skills-section {
+  width: 100%;
+  height: 20rem;
+  background-color: pink;
+}
+
+.landing-awards-section {
+  width: 100%;
+  height: 20rem;
+  background-color: gray;
+}
+
+.landing-who_is_talking_about_me-section {
+  width: 100%;
+  height: 20rem;
+  background-color: blue;
+}
+
+.landing-other-section {
+  width: 100%;
+  height: 20rem;
+  background-color: red;
+}
+
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {

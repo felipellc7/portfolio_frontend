@@ -23,7 +23,19 @@ const Landing = () => {
           </div>
         </div>
         <div className="landing-bio-section">
-          <p>ola</p>
+          <p>landing-bio-section</p>
+        </div>
+        <div className="landing-skills-section">
+          <p>landing-skills-section</p>
+        </div>
+        <div className="landing-awards-section">
+          <p>landing-awards-section</p>
+        </div>
+        <div className="landing-who_is_talking_about_me-section">
+          <p>landing-who_is_talking_about_me-section</p>
+        </div>
+        <div className="landing-other-section">
+          <p>landing-other-section</p>
         </div>
       </div>
     </>
